@@ -60,6 +60,7 @@ For the extension function style, each function has an equivalent negated versio
 | `str.shouldMatch(regex)` | Asserts that the string fully matches the given regex. |
 | `str.shouldStartWith("prefix")` | Asserts that the string starts with the given prefix. The prefix can be equal to the string. This matcher is case sensitive. To make this case insensitive call `toLowerCase()` on the value before the matcher. |
 | `str.shouldBeEqualIgnoringCase(other)` | Asserts that the string is equal to another string ignoring case. |
+| `str.shouldMatchJson(json)` | Asserts that the string is json format and the content of json is equal to another's. For example, `"""{"a": 1, "b": 2}""".shouldMatchJson("""{"b": 2, "a": 1}""")` can pass. |
 
 | Integers ||
 | -------- | ---- |
